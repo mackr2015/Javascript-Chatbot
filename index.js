@@ -13,10 +13,18 @@ var data= {
     
     news: {
         title:["Today's Top 5 Headlines"],
-        options:["The rare green comet will make its closest pass of Earth between February 1 and February 2, according to NASA.","The rare green comet will make its closest pass of Earth between February 1 and February 2, according to NASA.","The rare green comet will make its closest pass of Earth between February 1 and February 2, according to NASA."],
+        options:[
+            "The rare green comet will make its closest pass of Earth between February 1 and February 2, according to NASA.",
+            "The rare green comet will make its closest pass of Earth between February 1 and February 2, according to NASA.",
+            "The rare green comet will make its closest pass of Earth between February 1 and February 2, according to NASA."
+        ],
         url : {
             more:"https://www.youtube.com/@webhub/videos",
-            link:["https://www.youtube.com/@webhub/videos","https://www.youtube.com/@webhub/videos","https://www.youtube.com/@webhub/videos","https://www.youtube.com/@webhub/videos"]
+            link:[
+                "https://www.youtube.com/",
+                "https://www.youtube.com/@webhub/videos",
+                "https://www.youtube.com/@webhub/videos",
+                "https://www.youtube.com/@webhub/videos"]
         }
     },
     shopping: {
@@ -114,7 +122,7 @@ var cbot= document.getElementById("chat-box");
 var len1= data.chatinit.title.length;
 
 function showChatBot(){
-    console.log(this.innerText);
+    // console.log(this.innerText);
     if(this.innerText=='START CHAT'){
         document.getElementById('test').style.display='block';
         document.getElementById('init').innerText='CLOSE CHAT';
@@ -125,6 +133,7 @@ function showChatBot(){
     }
 }
 
+// Start the ChatBot window
 function initChat(){
     j=0;
     cbot.innerHTML='';
@@ -138,7 +147,7 @@ function initChat(){
 
 var j=0;
 function handleChat(){
-    console.log(j);
+    // console.log(j);
     var elm= document.createElement("p");
     elm.innerHTML= data.chatinit.title[j];
     elm.setAttribute("class","msg");
