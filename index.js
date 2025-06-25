@@ -1,11 +1,11 @@
 var data= {
     chatinit:{
-        title: ["Hello <span class='emoji'> &#128075;</span>","I am Mr. Chatbot","How can I help you?"],
+        title: ["Hello <span class='emoji'> &#128075;</span>","I am Mr. Chatbot","Please choose one of the categories presented."],
         options: ["Movies <span class='emoji'> &#128250;</span>","News","Shopping <span class='emoji'> &#128090;</span>","Music <span class='emoji'> &#127925;</span>"]
     },
     movies: {
         title:["Please select category"],
-        options:['Hollywood','Bollywood','Web Series','Others'],
+        options:['Hollywood','Web Series','Others'],
         url : {
             
         }
@@ -90,14 +90,14 @@ var data= {
             link:["#","#","#","#","#"]
         }
     },
-    bollywood: {
-        title: ["Thanks for your response","Here are some genre based movies"],
-        options: ["Comedy","Horror","Sci-Fi","Romance","Action"],
-        url: {
-            more:"https://www.youtube.com/@webhub/videos",
-            link:["#","#","#","#","#"]
-        }
-    },
+    // bollywood: {
+    //     title: ["Thanks for your response","Here are some genre based movies"],
+    //     options: ["Comedy","Horror","Sci-Fi","Romance","Action"],
+    //     url: {
+    //         more:"https://www.youtube.com/@webhub/videos",
+    //         link:["#","#","#","#","#"]
+    //     }
+    // },
     web: {
         title: ["Thanks for your response","Here are some genre based web series"],
         options: ["Comedy","Horror","Sci-Fi","Romance","Action"],
